@@ -66,8 +66,8 @@ app.get('/auth/failed', (req, res) => res.send('Falla al loguearse'))
 // In this route you can see that if the user is logged in u can acess his info in: req.user
 app.get('/auth/good', isLoggedIn, (req, res) => {
   console.log(req);
-  return res.send(req.user);
-  //return res.send(`Bienvenido ${req.user.displayName}!`);
+  //return res.send(req.user);
+  return res.send(`Bienvenido ${req.user.displayName}!<br>Registrado con la cuenta ${req.user.emails[0].value} <hr>`);
 
 }
 );
