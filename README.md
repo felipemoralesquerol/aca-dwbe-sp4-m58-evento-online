@@ -64,7 +64,7 @@ Adaptación de HTML básico para lograr auth vía Google!
 
 8. Ahora pasamos a descargar la librería passport para oauth.
 
-   npm install passport-google-oauth20 passport cookie-session
+   ```npm install passport-google-oauth20 passport cookie-session```
 
 9. Chequear y aplicar el código desde https://github.com/Vuka951/tutorial-code/tree/master/express-google-oauth2/done a nuestro proyecto
 
