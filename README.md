@@ -39,7 +39,39 @@ Adaptación de HTML básico para lograr auth vía Google!
 
 #### Instrucciones para gestionar auth vía Google
 
-1. Acceder a https://console.developers.google.com/apis/credentials para dar de crear las credenciales, proyecto y pantalla de consentimiento.
+1. Acceder a https://console.developers.google.com/apis/credentials y acceder con un usuario de correo electrónico de Google.
+
+2. Crear un proyecto nuevo, por ejemplo de nombre aca-dwbe-sp4-m58.
+
+   ![Crear Proyecto](images/google-crear-proyecto.jpg)
+   Tras la creación recibirá una notificación que creada!
+
+3. Luego configurar la pantalla de Consentimiento.
+
+   ![Pantalla de Consentimiento](images/google-pantalla-consentimiento.jpg)
+
+4. Agregar los permisos requeridos (.../aut/userinfo.email y .../auth/userinfor.profile). Tras las selección se deberá seleccionar el botón Actualizar.
+   
+   ![Permisos](images/google-permisos.jpg)
+
+5. Podemos agregar usuarios de prueba, tal como se muestra a continuación:
+
+   ![Usuarios de Prueba](images/google-usuarios-prueba.jpg)
+
+6. Con esto tenemos nuestra pantalla de consentimiento lista!
+
+7. Luego vamos a la solapa Credenciales y vamos a Crear ID de cliente de Oauth de tipo aplicación web, y le damos el nombre del cliente. Estos son las credenciales que vamos a estar utilizando en la app.
+
+8. Ahora pasamos a descargar la librería passport para oauth.
+
+   npm install passport-google-oauth20 passport cookie-session
+
+9. Chequear y aplicar el código desde https://github.com/Vuka951/tutorial-code/tree/master/express-google-oauth2/done a nuestro proyecto
+
+
+
+
+
 
 #### Instrucciones de instalación:
 
